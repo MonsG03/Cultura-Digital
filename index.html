@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULTURA DIGITAL</title>
+
+    <!-- Enlaces a archivos de estilos CSS van aquí -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="teachablesnavigation">
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="/Imagenes/logotec.jpg" alt="Inicio">
+            </a>
+            <a href="../index.html">
+                <img src="/Imagenes/logoteva.jpg" alt="Inicio">
+            </a>
+        </div>   
+        <div class="title-container">
+            <h1>CULTURA DIGITAL</h1>
+        </div>
+        <nav class="teachablescontextualnav">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">Menú</button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="../index.html">INICIO</a>
+                    <a href="/paginas/TEMAS.html">TEMAS</a>
+                    <a href="/paginas/ACTIVIDADES.html">ACTIVIDADES</a>
+                    <a href="/paginas/EVALUACIONES.html">EVALUACIONES</a>
+                    <a href="/paginas/ACERCA DE.html">ACERCA DE</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+         <!-- Contenido de la página  -->
+    
+            <section>  <!-- seccion de bienvenida  -->
+                <div class="inicio-container">
+                   <h1>¡ MODULO 2: Creatividad Digital.!<br> </h1>
+                    <p>Aprendizajes de trayectoria:
+                         Diseña y elabora contenidos digitales mediante técnicas, metodos,
+                        y recursos tecnologicos para fortalecer su creatividad e innovar 
+                        en su vida cotidiana.<br></p>
+                <p>Nuestra vida diaria está influenciada por lo digital, cuando nos conectamos a internet,<br>
+                    jugamos video juegos en linea con otras personas, o nos conectamos a una video llamada estamos 
+                    transportándonos a ese mundo digital.<br>
+                    Vivimos inmersos en una era donde lo digital se ha entrelazado con nuestra cotidianidad 
+                    de una manera sin precedentes.<br>
+                    Desde el momento en que nos despertamos hasta que nos acostamos, 
+                    interactuamos con dispositivos y<br> plataformas digitales que moldean nuestras experiencias y conexiones.<br> 
+                    Con solo unos pocos clics, nos sumergimos en un vasto universo en línea donde las barreras físicas se desvanecen
+                     y las posibilidades son infinitas.
+                </p>
+            </section>
+
+         <section>  <!-- seccion de cuadros -->
+            <div class="container">
+               
+                <div class="box">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGD8OB-bTs&#x2F;o3jelog1p1cKT5cN5MdprA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+                <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGD8OB-bTs&#x2F;o3jelog1p1cKT5cN5MdprA&#x2F;view?utm_content=DAGD8OB-bTs&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+                </div>
+                
+                <div class="box">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                       src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGENynROhk&#x2F;FP-jC--4DZfUazmuf0qCqA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                     </iframe>
+                   </div>
+                   <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGENynROhk&#x2F;FP-jC--4DZfUazmuf0qCqA&#x2F;view?utm_content=DAGENynROhk&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+                </div>
+               
+            </div>
+        </section>
+           
+            <div class="seccion-container">
+                <!-- BOTONES TEMAS ACTIVIDADES EVALUACIONES -->
+                <a href="/paginas/TEMAS.html" class="teboton"> <!-- pagina tema -->
+                    <img src="/Imagenes/tema.jpg" alt="TEMAS">
+                  </a>
+                  <a href="/paginas/ACTIVIDADES.html" class="acboton"> <!-- pagina tema -->
+                    <img src="/Imagenes/act.jpg" alt="TEMAS">
+                  </a>
+                  <a href="/paginas/EVALUACIONES.html" class="evboton"> <!-- pagina tema -->
+                    <img src="/Imagenes/eva.jpg" alt="TEMAS">
+                  </a>
+            </div>
+    
+    <footer><!--pie de pagina -->
+            <h6>Taller de Investigación. Todos los derechos reservados &copy; 2024 <br>
+            Instituto Tecnológico de Tuxtepec </h6>
+    </footer>
+
+</body>
+</html>

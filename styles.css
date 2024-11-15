@@ -1,0 +1,374 @@
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .heading-with-images img {
+        width: 50px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    .teachablesnavigation {
+        flex-direction: column; /* Apilar elementos en pantallas muy pequeñas */
+        align-items: center; /* Centrar elementos verticalmente en pantallas muy pequeñas */
+    }
+}
+body {
+    background-image: url(/Imagenes/fondop.jpg);
+    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+    background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza la página */
+}
+
+/* Estilos del encabezado */
+.teachablesnavigation {
+    background-color: rgb(255, 249, 236); /* Color de fondo del encabezado */
+    color: #000000; /* Color del texto del encabezado */
+    padding: 15px 20px; /* Espaciado interno del encabezado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del logotipo */
+.logo-container img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Estilos de los enlaces de navegación */
+.teachablesnavigation nav ul li a {
+    color: #f3f735; /* Color de enlace */
+}
+
+/* Estilos del título */
+.teachablesnavigation h1 {
+    font-size: 35px; /* Tamaño de la fuente */
+    font-family: "Arial Black", sans-serif; /* Fuente personalizada */
+    color: #000000; /* Color del texto */
+    text-shadow: 1px 1px 4px rgba(250, 60, 54, 0.986); /* Efecto de sombra */
+    text-align: left;
+}
+/* Estilo CSS para la animación del título */
+@keyframes moveTitle {
+    0% { transform: translateX(-150px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Aplica la animación al título */
+h1 {
+    animation: moveTitle 1s ease-out forwards;
+}
+
+.teachablesnavigation h1:hover {
+    color: #f7e11c; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.introduction {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.image-container {
+    text-align: center;
+    margin-bottom: -2px;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: 'Times New Roman', serif; /* Fuente personalizada */
+    color: #000000; /* Color del texto */
+    text-align: center;
+}
+
+/* Estilos del botón MENU con clase "dropbtn" */
+.dropbtn {
+    background-color: rgb(255, 219, 141); /* Nuevo color de fondo */
+    color: rgb(34, 21, 21); /* Color del texto */
+    padding: 15px 23px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    width: 120px; /* Nueva anchura del botón */
+}
+
+/* Estilos del menú desplegable */
+.dropbtn:hover {
+    background-color: rgb(255, 234, 187); /* Nuevo color de fondo al pasar el mouse */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffd000f8;
+    min-width: 200px;
+    z-index: 1;
+    top: 100%; /* Alinear el menú debajo del botón */
+    left: 10px; /* Alinear el menú con el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 15px 19px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff8800;
+    color: white; /* Cambia el color del texto al pasar el mouse */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer {
+    /* pie de pagina */
+    background-color: rgb(253, 214, 131);
+    color: #0b1570;
+    text-align: center;
+    padding: 22px 0;
+}
+section {/* secciones en general*/
+    padding: auto;/* ancho de todas las secciones */
+    border-bottom: 0px solid #ccc;/* linea divisoria  */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    /* cuadros inicio*/
+    width: 48%;
+    background-color: #fffdfd;
+    padding: 8px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+    }
+}
+.box1 {
+    /* cuadro acerca*/
+    width: 100%;
+    background-color: #fffdfd;
+    padding: 8px;
+    margin-bottom: 0px;
+   
+}
+
+
+.inicio-container {
+    /* inicio gif  */
+    background-image: url(media/forma.gif);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: 0px;  /* margen con el de arriba */
+}
+.seccion-container { /* inicio gif seccion 3  */
+    background-image: url(media/inicio3.gif);   
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    text-align: justify;
+    text-align-last: center;
+    margin-top: -16px;  /* margen con el de arriba */
+}
+.t3-container {
+    /* inicio gif  */
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 100px;
+    text-align: center;
+    margin-top: 0px;  /* margen con el de arriba */
+}
+.box3 {
+    /* cuadro acerca*/
+    width: 100%;
+    background-color: #fffdfd;
+    padding: 0px;
+    margin-bottom: 0px;
+   
+}
+
+
+/* PAGINAS DE TEMAS  */
+/* PAGINAS DE TEMAS BOTON TEMA */
+.botontema {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/*  BOTON TEMA 1 */
+.botontema1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f161ba; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/*  BOTON TEMA 2 */
+.botontema2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3fbd3f; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+
+
+
+/* PAGINAS DE TEMA GIF */
+.tema-container {
+    background-image: url(media/g1.gif);   
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 100px;
+    text-align: center;
+    margin-top: -12px;  /* margen con el de arriba */
+}
+
+/* PAGINAS DE SUBTEMA GIF */
+.subtema-container {
+    background-image: url(media/SUB.gif);   
+    background-size:70% 110%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+    text-align: center;
+    margin-top: -1px;  /* margen con el de arriba */
+}
+/* PAGINAS DE TEMA 1*/
+.tema1-container {
+    background-image: url(media/g2.gif);   
+    background-size:100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 100px;
+    text-align: center;
+    margin-top: -1px;  /* margen con el de arriba */
+}
+/* PAGINAS DE TEMA 2 */
+.tema2-container {
+    background-image: url(media/g3.gif);   
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 100px;
+    text-align: center;
+    margin-top: -12px;  /* margen con el de arriba */
+}
+
+
+
+
+/* BOTONES TEMAS ACTIVIDADES Y EVALUACION */
+.teboton { /* BOTONES TEMAS */
+    display: inline-block;
+    color: white; /* color del texto */
+    padding: 10px 20px; /* espacio alrededor del texto */
+    border-radius: 5px; /* esquinas redondeadas */
+    text-decoration: none; /* quitar subrayado del enlace */
+    transition: background-color 0.3s ease; /* transición suave al pasar el ratón */
+  }
+  
+  /* Estilos de la imagen dentro del botón */
+  .teboton img {
+    width: 150px; /* ancho de la imagen */
+    height: auto; /* altura automática para mantener la proporción */
+  }
+
+/* BOTONES  ACTIVIDADES */
+  .acboton {
+    display: inline-block;
+    color: white; /* color del texto */
+    padding: 10px 20px; /* espacio alrededor del texto */
+    border-radius: 5px; /* esquinas redondeadas */
+    text-decoration: none; /* quitar subrayado del enlace */
+    transition: background-color 0.3s ease; /* transición suave al pasar el ratón */
+  }
+  .acboton img {
+    width: 170px; /* ancho de la imagen */
+    height: auto; /* altura automática para mantener la proporción */
+  }
+    
+ /* BOTONES  EVALUACIONES */
+  .evboton img {
+    width: 140px; /* ancho de la imagen */
+    height: auto; /* altura automática para mantener la proporción */
+  }
+
+  .evboton {
+    display: inline-block;
+    color: white; /* color del texto */
+    padding: 10px 20px; /* espacio alrededor del texto */
+    border-radius: 5px; /* esquinas redondeadas */
+    text-decoration: none; /* quitar subrayado del enlace */
+    transition: background-color 0.3s ease; /* transición suave al pasar el ratón */
+  }
+    /* Estilos del botón de regreso */
+/* Estilos del botón */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #66e0d0; /* Verde */
+    color: rgb(24, 23, 23);
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos adicionales si lo deseas */
+  .button:hover {
+    background-color: #2abebe; /* Verde más oscuro al pasar el ratón */
+  }
+  a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: red;
+}
